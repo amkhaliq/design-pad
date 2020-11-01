@@ -4,10 +4,13 @@ import './index.css';
 
 function App() {
   return (
-    <div className="app-title">
-      
-      <DesignContainer />
+    <div className="container">
+      <h1 id="title">DESIGN PAD</h1>
+      <div className="app-title">
+        
+        <DesignContainer />
 
+      </div>
     </div>
   );
 }

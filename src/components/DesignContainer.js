@@ -18,7 +18,7 @@ class DesignContainer extends Component {
 
     handleEdit = event => {
         this.setState({
-            edit: !event.target.value
+            edit: !event.edit
         });
         console.log(event.target)
     }
@@ -27,7 +27,12 @@ class DesignContainer extends Component {
 
         return (
             <div>
-                <button className="edit-btn" onClick={this.handleEdit}>EDIT</button>
+                <div>
+                    <button className="edit-btn" onClick={this.handleEdit}>EDIT</button>
+                </div>
+
+            <DesignBoard />
+            
             </div>
         );
     }
