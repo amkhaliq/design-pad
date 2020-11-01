@@ -1,3 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
 html {
-    background-color: #282c34;
+    width: 100%;
+    height: 100%;
+    background-color: #FDF5E6;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+/* ============================================================================================= */
+/* ----------------------------------------- Beginning of Title Design ------------------------- */
+/* ============================================================================================= */
+
+/* temporary */
+.app-title {
+    /* border: 3px solid greenyellow; */
+    text-align: right;
+}
+
+/* .container {
+    border: 4px solid red;
+} */
+
+/* temporary */
+
+#title {
+    font-family: 'Open Sans', sans-serif;
+    color: darkslategray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 0.5;
+    text-shadow: darkgray 3px 2px 0;
+    position: relative;
+    text-align: center;
+}
+
+#title:after {
+    content: DESIGN PAD;
+    position: absolute;
+    left: 8px;
+    top: 32px;
+}
+
+#title:after {
+    background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%,
+                        #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+  }
+
+/* ============================================================================================= */
+/* ----------------------------------------- End of Title -------------------------------------- */
+/* ============================================================================================= */
+
+/* ============================================================================================= */
+/* -------------------------------- Beginning of a Edit Button Design -------------------------- */
+/* ============================================================================================= */
+
+.edit-btn {
+    background-color: darkslategrey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 370px;
+}
+
+/* ============================================================================================== */
+/* ----------------------------------------- End of Button -------------------------------------- */
+/* ============================================================================================== */
+
+/* ============================================================================================== */
+/* ----------------------------------------- Start of PadInput design --------------------------- */
+/* ============================================================================================== */
+
+.pad-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 4px solid black;
+    background-color: darkslategray;
+    padding: 1.5em;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+.pad-input > div {
+    color: white;
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+    margin: 6px;
+    border-radius: 100%;
+}
+
+#c-red {
+    background-color: #DC143C;
+}
+
+#c-blue {
+    background-color: #191970;
+}
+
+#c-green {
+    background-color: #008080;
+}
+
+#c-black {
+    background-color: #000000;
+}
+
+#c-orange {
+    background-color: #FFA500;
+}
+
+#c-yellow {
+    background-color: #FFD700;
+}
+
+#c-cyan {
+    background-color: #00FFFF;
+}
+
+#c-brown {
+    background-color: #D2691E;
+}
+
+/* ============================================================================================== */
+/* ----------------------------------------- End of PadInput design ----------------------------- */
+/* ============================================================================================== */
+
+/* ============================================================================================== */
+/* ---------------------------------------- Start of BoardDesign -------------------------------- */
+/* ============================================================================================== */
+
+.board-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 5em;
+    /* border: 5px solid darkmagenta; */
+    padding: 4em;
+}
+
+.design-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 4px dashed blue; */
+    text-align: center;
+    margin-right: 250px;
+    width: 500px;
+    height: 110%;
+}
+
+.board-input {
+    background: darkgray;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 5%;
+}
+/* ============================================================================================== */
+/* ---------------------------------------- End of BoardDesign ---------------------------------- */
+/* ============================================================================================== */
