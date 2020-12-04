@@ -1,38 +1,49 @@
 import React, {Component} from 'react'
-import './index.css'
 import PadInput from './PadInput'
+import './index.css'
 
 class DesignBoard extends Component {
-    constructor(props) {
-        super(props)
+    state = {
+        edit: false,
+        color: " "
+    }
 
-        this.state = {
-            containers: []
-        }
+    handlePadInputEdit = () => {
+        this.setState(props => ({
+            edit: !props.edit
+        }));
     }
 
     allowDrop = (event) => {
         event.preventDefault();
     }
 
-    onDrop = (event) => {
+    drop = (event) => {
         event.preventDefault();
-        let data = event.dataTransfer.getData("text");
-        event.target.appendChild(document.getElementById(data));
-    }
+        const droppedItem = event.dataTransfer.getData("text")
+        
+        event.target.style.backgroundColor = droppedItem;
+    };
 
     render () {
+        const edit = this.state.edit
+
         return (
             /** 2x2 grid */
+            
             <div className="board-container">
                 <div>
-                    <PadInput />
+                    <PadInput edit={edit}/>
                 </div>
-                    <div className="design-board">  
-                        <div className="board-input"></div>
-                        <div className="board-input"></div>
-                        <div className="board-input"></div>
-                        <div className="board-input"></div>
+                    <div className="design-board">
+                        {/* onDragOver={this.allowDrop}
+                        onDrop={this.drop}
+                        style={{backgroundColor: this.state.color}}> */}
+                              
+                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
+                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
+                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
+                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
                     </div>
             </div>
         );
