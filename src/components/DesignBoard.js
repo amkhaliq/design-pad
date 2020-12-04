@@ -40,10 +40,29 @@ class DesignBoard extends Component {
                         onDrop={this.drop}
                         style={{backgroundColor: this.state.color}}> */}
                               
-                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
-                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
-                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
-                        <div className="board-input" style={{backgroundColor: ""}} onDrop={this.drop} onDragOver={this.allowDrop}></div>
+                        <div className="board-input" 
+                            style={{backgroundColor: ""}} 
+                            onDrop={this.drop} 
+                            onDragOver={this.allowDrop}>
+                        </div>
+
+                        <div className="board-input" 
+                            style={{backgroundColor: ""}} 
+                            onDrop={this.drop} 
+                            onDragOver={this.allowDrop}>
+                        </div>
+
+                        <div className="board-input"
+                            style={{backgroundColor: ""}} 
+                            onDrop={this.drop} 
+                            onDragOver={this.allowDrop}>
+                        </div>
+                        
+                        <div className="board-input" 
+                            style={{backgroundColor: ""}} 
+                            onDrop={this.drop} 
+                            onDragOver={this.allowDrop}>
+                        </div>
                     </div>
             </div>
         );
