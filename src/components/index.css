@@ -64,7 +64,7 @@ html {
 /* -------------------------------- Beginning of a Edit Button Design -------------------------- */
 /* ============================================================================================= */
 
-.edit-btn {
+.edit-button {
     background-color: darkslategrey;
     border: none;
     color: white;
@@ -73,8 +73,32 @@ html {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin-right: 370px;
+    margin-right: 20%;
 }
+
+.edit-button-state {
+    background-color: darkgray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20%;
+}
+
+/* .reset-button {
+    background-color: darkslategrey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 15%;
+} */
 
 /* ============================================================================================== */
 /* ----------------------------------------- End of Button -------------------------------------- */
@@ -91,7 +115,7 @@ html {
     background-color: darkslategray;
     padding: 1.5em;
     width: 200px;
-    margin-left: 250px;
+    margin-left: 40%;
     margin-top: 70px;
 }
 
@@ -104,38 +128,6 @@ html {
     border-radius: 100%;
 }
 
-#c-red {
-    background-color: #DC143C;
-}
-
-#c-blue {
-    background-color: #191970;
-}
-
-#c-green {
-    background-color: #008080;
-}
-
-#c-black {
-    background-color: #000000;
-}
-
-#c-orange {
-    background-color: #FFA500;
-}
-
-#c-yellow {
-    background-color: #FFD700;
-}
-
-#c-cyan {
-    background-color: #00FFFF;
-}
-
-#c-brown {
-    background-color: #D2691E;
-}
-
 /* ============================================================================================== */
 /* ----------------------------------------- End of PadInput design ----------------------------- */
 /* ============================================================================================== */
@@ -146,10 +138,10 @@ html {
 
 .board-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 5em;
     /* border: 5px solid darkmagenta; */
-    padding: 4em;
+    padding: 2em;
 }
 
 .design-board {
@@ -157,9 +149,9 @@ html {
     grid-template-columns: 1fr 1fr;
     /* border: 4px dashed blue; */
     text-align: center;
-    margin-right: 250px;
+    margin-right: 20%;
     width: 500px;
-    height: 110%;
+    /* height: 110%; */
 }
 
 .board-input {
