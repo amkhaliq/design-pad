@@ -12,10 +12,6 @@ html {
 /* ============================================================================================= */
 
 /* temporary */
-.app-title {
-    /* border: 3px solid greenyellow; */
-    text-align: right;
-}
 
 /* .container {
     border: 4px solid red;
@@ -64,7 +60,13 @@ html {
 /* -------------------------------- Beginning of a Edit Button Design -------------------------- */
 /* ============================================================================================= */
 
-.edit-button {
+.content-align {
+    /* border: 3px solid greenyellow; */
+    text-align: right;
+}
+
+.edit-button-before {
+    position: relative;
     background-color: darkslategrey;
     border: none;
     color: white;
@@ -73,10 +75,11 @@ html {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
-.edit-button-state {
+.edit-button-after {
+    position: relative;
     background-color: darkgray;
     border: none;
     color: black;
@@ -85,20 +88,8 @@ html {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin-right: 20%;
+    margin-right: 10%;
 }
-
-/* .reset-button {
-    background-color: darkslategrey;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 15%;
-} */
 
 /* ============================================================================================== */
 /* ----------------------------------------- End of Button -------------------------------------- */
@@ -108,14 +99,18 @@ html {
 /* ----------------------------------------- Start of PadInput design --------------------------- */
 /* ============================================================================================== */
 
+.input {
+    opacity: 0.6;
+}
+
 .pad-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 4px solid black;
     background-color: darkslategray;
     padding: 1.5em;
-    width: 200px;
-    margin-left: 40%;
+    width: fit-content;
+    margin-left: 70%;
     margin-top: 70px;
 }
 
@@ -124,8 +119,11 @@ html {
     padding: 1em;
     border: 1px solid black;
     text-align: center;
+    font-weight: 700;
     margin: 6px;
-    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 /* ============================================================================================== */
@@ -136,7 +134,7 @@ html {
 /* ---------------------------------------- Start of BoardDesign -------------------------------- */
 /* ============================================================================================== */
 
-.board-container {
+#board-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5em;
@@ -151,7 +149,6 @@ html {
     text-align: center;
     margin-right: 20%;
     width: 500px;
-    /* height: 110%; */
 }
 
 .board-input {
