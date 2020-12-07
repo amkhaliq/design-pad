@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
-
 import './index.css'
 
 class PadInput extends Component {
-    
 
     onDrag(event) {
         const color = event.target.style.backgroundColor;
@@ -12,43 +10,68 @@ class PadInput extends Component {
     }
 
     render() {
-
+            
         return (
             /** grid-layout 
-             *  Draggable elements within the PadInput component
+            *  Draggable elements within the PadInput component
             */
             <div className="pad-input">
-                <div id="item-1" style={{backgroundColor: "#DC143C"}} 
-                                draggable={true} 
-                                onDragStart={this.onDrag}>1</div>
+                <div id="item-1" style={{backgroundColor: "#DC143C"}}
+                                isEditable={this.props.isEditable}
+                                draggable={true}
+                                onDragStart={this.onDrag}
+                                >
+                                1
+                                </div>
 
                 <div id="item-2" style={{backgroundColor: "#191970"}} 
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>2</div>
+                                onDragStart={this.onDrag}>
+                                2
+                                </div>
 
-                <div id="item-3" style={{backgroundColor: "#008080"}} 
+                <div id="item-3" style={{backgroundColor: "#008080"}}
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>3</div>
+                                onDragStart={this.onDrag}>
+                                3
+                                </div>
 
-                <div id="item-4" style={{backgroundColor: "#000000"}} 
+                <div id="item-4" style={{backgroundColor: "#000000"}}
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>4</div>
+                                onDragStart={this.onDrag}>
+                                4
+                                </div>
 
-                <div id="item-5" style={{backgroundColor: "#FFA500"}} 
+                <div id="item-5" style={{backgroundColor: "#FFA500"}}
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>5</div>
+                                onDragStart={this.onDrag}>
+                                5
+                                </div>
 
-                <div id="item-6" style={{backgroundColor: "#FFD700"}} 
+                <div id="item-6" style={{backgroundColor: "#FFD700"}}
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>6</div>
+                                onDragStart={this.onDrag}>
+                                6
+                                </div>
 
-                <div id="item-7" style={{backgroundColor: "#00FFFF"}} 
+                <div id="item-7" style={{backgroundColor: "#00FFFF"}}
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>7</div>
+                                onDragStart={this.onDrag}>
+                                7
+                                </div>
 
-                <div id="item-8" style={{backgroundColor: "#D2691E"}} 
+                <div id="item-8" style={{backgroundColor: "#D2691E"}}
+                                isEditable={this.props.isEditable}
                                 draggable={true} 
-                                onDragStart={this.onDrag}>8</div>
+                                onDragStart={this.onDrag}>
+                                8
+                                </div>
             </div>
         );
     }
